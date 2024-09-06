@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Usuários</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo do Site">
+    <h1>My K-List</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="gruposdekpop.html">Grupos de K-Pop</a>
+        <ul><li><a href="straykids.html">Stray Kids</a></li></ul>     
+      </li>
+      <li><a href="autor.html">Autor</a></li>
+      <li><a href="login.html">Admin</a>
+        <ul>
+          <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
+          <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Cadastro/Edição de Usuário</h2>
+    <form action="cadastrousuarios.html" method="post" autocomplete="off">
+      <div><label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" minlength="6" maxlength="15" required></div><br>
+       
+      <div><label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required></div><br>
+
+      <div><label for="phone">Telefone:</label>
+      <input type="tel" name="phone" id="phone" placeholder="(XX) XXXXX-XXXX" required></div><br>
+
+      <div><label for="bday">Data de Nascimento:</label>
+      <input type="date" name="bday" id="bday" required></div><br>
+
+      <div><label for="know">Já conhecia kpop?</label>
+      <label for="sim">Sim</label>
+      <input type="radio" name="know" id="sim">
+      <label for="nao">Não</label>
+      <input type="radio" name="know" id="nao"></div><br>
+
+      <div><label for="password">Senha:</label>
+      <input type="password" id="password" name="password" placeholder="Pelo menos 6 caracteres" minlength="6" maxlength="15" required>
+      </div><br>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button><br>
+      <p>
+        Já tem cadastro?
+        <a href="login.html">Fazer login</a>
+      </p>
+      <h2>Tabela de Usuários</h2>
+      <table border="2">
+        <tr>
+          <th>#</th>
+          <th>Usuário</th>
+          <th>E-mail</th>
+          <th colspan="2"></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>brstay</td>
+          <td>brstay@kpop.com</td>
+          <td><button onclick="editar()">Editar</button></td>
+          <td><button onclick="excluir()">Excluir</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>bronedoor</td>
+          <td>bronedoor@kpop.com</td>
+          <td><button onclick="editar()">Editar</button></td>
+          <td><button onclick="excluir()">Excluir</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>bralphaz</td>
+          <td>bralphaz@kpop.com</td>
+          <td><button onclick="editar()">Editar</button></td>
+          <td><button onclick="excluir()">Excluir</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>brkizzy</td>
+          <td>brkizzy@kpop.com</td>
+          <td><button onclick="editar()">Editar</button></td>
+          <td><button onclick="excluir()">Excluir</button></td>
+        </tr>
+      </table>
+  </main><br>
+  <footer>
+    <p>
+      Desenvolvido por Enaira - 
+      <a href="autor.html">Autor</a>
+    </p>
+  </footer>
+</body>
+</html>
