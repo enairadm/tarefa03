@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 15%, #040308, #170920);
+  color: white;
+}
+
+.logo {
+  margin-left: 80px;
+  margin-top: 30px;
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+}
+
+.sublinks {
+  font-size: small;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar li:hover .sublinks {
+  display: block;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+a:link {
+  color: #21C063;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #21C063;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+p, form, table {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2, h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+hr {
+  border: 0.8px solid #48954D;
+  margin-bottom: 5px;
+}
+
+img {
+  border-radius: 6px;
+}
+
+.fundo {
+  background-color: rgba(16, 40, 23, 0.29);
+  border-radius: 8.71px;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+.buttonYESback {
+  background: #21C063;
+  color: #06030B;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border: none;
+  border-radius: 5.82px;
+  cursor: pointer;
+}
+
+.buttonNOback {
+  background: none;
+  color: #21C063;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border-style: solid;
+  border-color: #21C063;
+  border-radius: 5.82px;
+  cursor: pointer;
+}
+
+.buttonYESback.form {
+  height: 28px;
+  width: 85px;
+}
+
+.buttonNOback.form {
+  height: 28px;
+  width: 85px;
+}
+
+.section {
+  padding-top: 30px;
+}
+
+.fundo.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form :where(.input-box input, .textarea-box textarea, .select-box) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.input-box input {
+  outline: none;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8.89px;
+  padding: 0 10px;
+  background-color: rgba(77, 28, 111, 0.35);
+  color: white;
+}
+
+.select-box label {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.select-box select {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8.89px;
+  padding: 0 10px;
+  background-color: rgba(77, 28, 111, 0.35);
+  color: white;
+}
+
+.textarea-box textarea {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  margin-top: 8px;
+  border: none;
+  resize: none;
+  border-radius: 8.89px;
+  padding: 10px;
+  background-color: rgba(77, 28, 111, 0.35);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.coluna {
+  display: flex;
+  column-gap: 38px;
+}
+
+.radio-box {
+  margin-bottom: 20px;
+}
+
+form :where(.radio-box, .radio) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.radio {
+  column-gap: 5px;
+}
+
+form :where(.radio input, .radio label) {
+  cursor: pointer;  
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.link-login {
+  margin-top: 24px;
+}
+
+table {
+  width: 100%;
+}
+
+.titleTable {
+  text-align: left;
+  padding-left: 30px;
+  color: #21C063;
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+  font-size: small;
+}
+
+th, td {
+  padding: 10px;
+}
+
+thead th {
+  border-bottom: 0.8px solid #48954D;
+}
+
+.acoes {
+  padding: 1px;
+  cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {background-color: rgba(77, 28, 111, 0.35);}
+tbody tr:nth-child(even) {background-color: rgba(58, 142, 82, 0.35);}
