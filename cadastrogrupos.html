@@ -4,161 +4,225 @@
 <head>
   <meta charset="UTF-8" />
   <title>Cadastro de Grupos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
+  <style>
+    .iconPags {
+      width: 24px;
+      height: 24px;
+  
+    }
+
+    .iconPags.you, .iconPags.wei {
+      width: 30px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo do Site">
-    <h1>My K-List</h1>
+    <img class="logo" src="img/logo.png" alt="Logo do Site">
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Página Inicial</a></li>
-      <li><a href="gruposdekpop.html">Grupos de K-Pop</a>
-        <ul><li><a href="straykids.html">Stray Kids</a></li></ul>     
-      </li>
-      <li><a href="autor.html">Autor</a></li>
-      <li><a href="login.html">Admin</a>
-        <ul>
-          <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
-          <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
-        </ul>
-      </li>
+  <nav class="row">
+    <ul class="navbar">
+      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
+      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
+        <ul class="sublinks">
+          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
+      <li class="#"><a href="autor.html">AUTOR</a></li>
+      <li class="#"><a href="login.html">ADMIN</a>
+        <ul class="sublinks">
+          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
+          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
     </ul>
   </nav>
+  <hr>
 
   <main>
-    <h2>Cadastro/Edição de Grupos</h2>
-    <form action="cadastrogrupos.html" method="post" autocomplete="off">
-      <div><label for="nomedogrupo">Nome do Grupo</label>
-      <input type="text" name="nomedogrupo" id="nomedogrupo" placeholder="Stray Kids" required></div><br>
+    <div class="section">
+      <div class="titulospag">
+        <h2>Cadastro/Edição de Grupos</h2>
+        <hr></div>
 
-      <div><label for="introducao">Introdução</label>
-      <textarea name="introducao" id="introducao" rows="2" cols="75" required></textarea></div><br>
+      <div class="fundo">
+      <form action="cadastrogrupos.html" method="post" autocomplete="off">
+        <div class="input-box">
+          <label for="nomedogrupo">Nome do Grupo</label>
+          <input type="text" name="nomedogrupo" id="nomedogrupo" placeholder="Stray Kids" required></div>
 
-      <div><label for="dday">Data de Debut</label>
-        <input type="date" name="dday" id="dday" required></div><br>
+          <div class="textarea-box">
+          <label for="introducao">Introdução</label>
+          <textarea name="introducao" id="introducao" rows="2" cols="75" required></textarea></div>
 
-      <div><label for="geracao">Geração </label>
-      <select name="geracao" id="geracao" required>
-        <option value="primeira">1ª Geração</option>
-        <option value="segunda">2ª Geração</option>
-        <option value="terceira">3ª Geração</option>
-        <option value="quarta">4ª Geração</option>
-        <option value="quinta">5ª Geração</option>
-      </select>
+          <div class="coluna">
+          <div class="input-box">
+          <label for="dday">Data de Debut</label>
+          <input type="date" name="dday" id="dday" required></div>
 
-      <label for="categoria">Categoria </label>
-      <select name="categoria" id="categoria" required>
-        <option value="girl">Girlgroup</option>
-        <option value="boy">Boygroup</option>
-      </select></div><br>
+          <div class="select-box">
+          <label for="geracao">Geração</label>
+          <select name="geracao" id="geracao" required>
+            <option value="primeira">1ª Geração</option>
+            <option value="segunda">2ª Geração</option>
+            <option value="terceira">3ª Geração</option>
+            <option value="quarta">4ª Geração</option>
+            <option value="quinta">5ª Geração</option>
+          </select></div>
 
-      <div><label for="empresa">Empresa</label>
-      <input type="text" name="empresa" id="empresa" required>
+          <div class="select-box">
+          <label for="categoria">Categoria </label>
+          <select name="categoria" id="categoria" required>
+            <option value="girl">Girlgroup</option>
+            <option value="boy">Boygroup</option>
+          </select></div></div>
 
-      <label for="pais">País </label>
-      <select name="pais" id="pais" required>
-        <option value="kor">Coreia do Sul</option>
-        <option value="jpn">Japão</option>
-      </select>
+          <div class="coluna">
+          <div class="input-box">
+          <label for="empresa">Empresa</label>
+          <input type="text" name="empresa" id="empresa" required></div>
 
-      <label for="fandom">Nome do Fandom</label>
-      <input type="text" name="fandom" id="fandom" required></div><br>
+          <div class="select-box">
+          <label for="pais">País </label>
+          <select name="pais" id="pais" required>
+            <option value="kor">Coreia do Sul</option>
+            <option value="jpn">Japão</option>
+          </select></div>
 
-      <div><label for="instagram">Páginas Oficiais</label></div><br>
-      <div><label for="instagram">
-        <img src="icons/ins.png" alt="Instagram" width="24" height="24"></label>
-        <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/perfil_oficial">
+          <div class="input-box">
+          <label for="fandom">Nome do Fandom</label>
+          <input type="text" name="fandom" id="fandom" required></div></div>
 
-        <label for="x"></label>
-        <img src="icons/you.png" alt="YouTube" width="30" height="24">
-        <input type="url" name="youtube" id="youtube" placeholder=""></div>
+          <p>Páginas Oficiais</p><br>
+            <div class="coluna">
+            <div class="input-box">
+            <label for="instagram">
+            <img class="iconPags" src="icons/instagram.png" alt="Instagram"></label>
+            <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/perfil_oficial"></div>
 
-      <div><label for="x"></label>
-        <img src="icons/x.png" alt="X(Twitter)" width="24" height="24">
-        <input type="url" name="x" id="x" placeholder="">
-        
-        <label for="x"></label>
-        <img src="icons/fac.png" alt="Facebook" width="24" height="24">
-        <input type="url" name="facebook" id="facebook" placeholder=""></div>
+            <div class="input-box">
+            <label for="youtube"></label>
+            <img class="iconPags you" src="icons/youtube.png" alt="YouTube">
+            <input type="url" name="youtube" id="youtube" placeholder=""></div></div>
 
-      <div><label for="x"></label>
-        <img src="icons/tik.png" alt="TikTok" width="24" height="24">
-        <input type="url" name="tiktok" id="tiktok" placeholder="">
-        
-        <label for="x"></label>
-        <img src="icons/we.png" alt="Weibo" width="29" height="24">
-        <input type="url" name="weibo" id="weibo" placeholder=""></div>
-        
-      <p><b>Membros</b></p>
-      <div><label for="file">Imagem do Membro</label>
-      <input type="file" name="file" id="file" accept="image/jpeg"></div><br>
+            <div class="coluna">
+            <div class="input-box">
+            <label for="x"></label>
+            <img class="iconPags" src="icons/twitter.png" alt="X(Twitter)">
+            <input type="url" name="x" id="x" placeholder=""></div>
 
-      <div><label for="nomedomembro">Nome Artístico do Membro</label>
-      <input type="text" name="nomedomembro" id="nomedomembro" placeholder="Lee Know (리노)"></div><br>
+            <div class="input-box">
+            <label for="facebook"></label>
+            <img class="iconPags" src="icons/facebook.png" alt="Facebook">
+            <input type="url" name="facebook" id="facebook" placeholder=""></div></div>
 
-      <div><label for="mday">Data de Nascimento</label>
-        <input type="date" name="mday" id="mday"></div><br>
-      
-      <div><label for="npais">Nacionalidade </label>
-        <select name="npais" id="npais">
-          <option value="nkor">Sul-coreano</option>
-          <option value="njpn">Japonês</option>
-          <option value="nchn">Chinês</option>
-          <option value="naus">Australiano</option>
-          <option value="ncan">Canadense</option>
-          <option value="neua">Estadunidense</option>
-        </select></div><br>   
+            <div class="coluna">
+            <div class="input-box">
+            <label for="tiktok"></label>
+            <img class="iconPags" src="icons/tiktok.png" alt="TikTok">
+            <input type="url" name="tiktok" id="tiktok" placeholder=""></div>           
+                  
+            <div class="input-box">
+            <label for="weibo"></label>
+            <img class="iconPags wei" src="icons/weibo.png" alt="Weibo">
+            <input type="url" name="weibo" id="weibo" placeholder=""></div></div>
+          
+          <div style="font-size: larger;">
+            <p>Membros</p>
+            <hr></div>
+            <div class="coluna">
+            <div class="input-box">
+            <label for="file">Imagem do Membro</label>
+            <input type="file" name="file" id="file" accept="image/jpeg" required></div>
 
-      </div><button type="submit">Enviar</button>
-      <button type="reset">Limpar</button></div>
-  </form><br>
-  <h2>Tabela de Grupos</h2>
-    <table border="2">
-      <tr>
-        <th>#</th>
-        <th>Nome Do Grupo</th>
-        <th>Categoria</th>
-        <th>Geração</th>
-        <th>Empresa</th>
-        <th>País</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>STRAY KIDS</td>
-        <td>Boygroup</td>
-        <td>4ª Geração</td>
-        <td>JYP Entertainment</td>
-        <td>Coreia do Sul</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>XG</td>
-        <td>Girlgroup</td>
-        <td>4ª Geração</td>
-        <td>XGALX</td>
-        <td>Japão</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>BOYNEXTDOOR</td>
-        <td>Boygroup</td>
-        <td>5ª Geração</td>
-        <td>KOZ ENTERTAINMENT</td>
-        <td>Coreia do Sul</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>KISS OF LIFE</td>
-        <td>Girlgroup</td>
-        <td>5ª Geração</td>
-        <td>S2 Entertainment</td>
-        <td>Coreia do Sul</td>
-      </tr>
-    </table>
-  </main><br>
+            <div class="input-box">
+            <label for="nomedomembro">Nome Artístico do Membro</label>
+            <input type="text" name="nomedomembro" id="nomedomembro" placeholder="Lee Know (리노)" required></div></div>
+
+            <div class="coluna">
+            <div class="input-box">
+            <label for="mday">Data de Nascimento</label>
+            <input type="date" name="mday" id="mday" required></div>
+          
+            <div class="select-box">
+            <label for="npais">Nacionalidade</label>
+            <select name="npais" id="npais" required>
+              <option value="nkor">Sul-coreano</option>
+              <option value="njpn">Japonês</option>
+              <option value="nchn">Chinês</option>
+              <option value="naus">Australiano</option>
+              <option value="ncan">Canadense</option>
+              <option value="neua">Estadunidense</option>
+            </select></div></div>
+            
+            <hr>
+
+          <div class="buttons">
+            <button class="buttonYESback form" type="submit">Enviar</button>
+            <button class="buttonNOback form" type="reset">Limpar</button></div>
+      </form></div></div>
+
+  <div class="section">
+      <div class="titulospag"><h2>Tabela de Grupos</h2><hr></div>
+      <div class="fundo">
+      <table>
+        <thead>
+        <tr>
+          <th>#</th>
+            <th>Nome Do Grupo</th>
+            <th>Categoria</th>
+            <th>Geração</th>
+            <th>Empresa</th>
+            <th>País</th>
+            <th class="acoes" colspan="2"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="titleTable">STRAY KIDS</td>
+            <td>Boygroup</td>
+            <td>4ª Geração</td>
+            <td>JYP Entertainment</td>
+            <td>Coreia do Sul</td>
+            <td class="acoes"> <img src="icons/editar.png" alt="botao de editar"></td>
+            <td class="acoes"> <img src="icons/excluir.png" alt="botao de excluir"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="titleTable">XG</td>
+            <td>Girlgroup</td>
+            <td>4ª Geração</td>
+            <td>XGALX</td>
+            <td>Japão</td>
+            <td class="acoes"> <img src="icons/editar.png" alt="botao de editar"></td>
+            <td class="acoes"> <img src="icons/excluir.png" alt="botao de excluir"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="titleTable">BOYNEXTDOOR</td>
+            <td>Boygroup</td>
+            <td>5ª Geração</td>
+            <td>KOZ ENTERTAINMENT</td>
+            <td>Coreia do Sul</td>
+            <td class="acoes"> <img src="icons/editar.png" alt="botao de editar"></td>
+            <td class="acoes"> <img src="icons/excluir.png" alt="botao de excluir"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="titleTable">KISS OF LIFE</td>
+            <td>Girlgroup</td>
+            <td>5ª Geração</td>
+            <td>S2 Entertainment</td>
+            <td>Coreia do Sul</td>
+            <td class="acoes"> <img src="icons/editar.png" alt="botao de editar"></td>
+            <td class="acoes"> <img src="icons/excluir.png" alt="botao de excluir"></td>
+          </tr>
+        </tbody>
+      </table></div></div>
+  </main><br><hr>
   <footer>
     <p>
       Desenvolvido por Enaira - 
