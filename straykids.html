@@ -4,115 +4,183 @@
 <head>
   <meta charset="UTF-8">
   <title>Stray Kids</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
+  <style>
+    .sectionIN, .sectionG.dois {
+      padding-bottom: 30px;
+    }
+
+    .sectionG {
+      float: left;
+    }
+
+    row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .sectionG.um {
+      width: 62%;
+    }
+
+    .sectionG.dois {
+      width: 38%;
+    }
+
+    .sectionG.tres {
+      width: 38%;
+    }
+
+    .sectionG.dois, .sectionG.tres {
+      padding-left: 45px;
+    }
+
+    .sectionG.tres .fundo {
+      text-align: center;
+    }
+
+    .sectionG.tres.icon {
+      width: 34px;
+      height: 34px;
+    }
+
+    .sectionG.tres img {
+      margin: 10px;
+    }
+
+    .sectionG.um h4 {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      padding-bottom: 8px;
+    }
+
+    .fundo .right {
+      text-align: right;
+    }
+
+  </style>
 </head>
 
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo do site">
-    <h1>My K-List</h1>
+    <img class="logo" src="img/logo.png" alt="Logo do site">
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Página Inicial</a></li>
-      <li><a href="gruposdekpop.html">Grupos de K-Pop</a>
-        <ul><li><a href="straykids.html">Stray Kids</a></li></ul>     
-      </li>
-      <li><a href="autor.html">Autor</a></li>
-      <li><a href="login.html">Admin</a>
-        <ul>
-          <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
-          <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
-        </ul>
-      </li>
+  <nav class="row">
+    <ul class="navbar">
+      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
+      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
+        <ul class="sublinks">
+          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
+      <li class="#"><a href="autor.html">AUTOR</a></li>
+      <li class="#"><a href="login.html">ADMIN</a>
+        <ul class="sublinks">
+          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
+          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
     </ul>
   </nav>
-
+  <hr>
+  
   <main>
-    <img src="img/GRAJcOebAAAuxxD.jpg" alt="Imagem Stray Kids" 
-    width="499" height="332.67">
-    <h2>Stray Kids</h2>
+    <div class="sectionIN">
+      <img src="img/ImagemPrincipal.png" alt="Imagem Stray Kids">
+      <h2>Stray Kids</h2></div>
 
-    <section>
-      <h3>introdução</h3>
-        <p>Stray Kids (스트레이 키즈), também conhecido como SKZ, 
+    <section class="sectionIN">
+      <div class="titulospag"><h3>introdução</h3><hr></div>
+        <p class="fundo">Stray Kids (스트레이 키즈), também conhecido como SKZ, 
         é um grupo masculino sul-coreano de oito membros da JYP Entertainment. 
         O grupo foi formado por meio do reality show de competição de mesmo nome, Stray Kids.</p>
     </section>
 
-    <section>
-      <h3>informação geral</h3>
-        <p>Debut: 25 de março de 2018</p>
-        <p>Fandom: STAY</p>
-        <p>Empresa: JYP Entertainment</p>
-        <p>Geração: 4ª Geração</p>
-        <p>País: Coreia do Sul</p>
-    </section>
+    <div class="row">
+      <section class="sectionG um">
+        <div class="titulospag"><h3>membros</h3><hr></div>
 
-    <section>
-      <h3>membros</h3>
+        <div class="fundo"><div>
+          <h4>Bang Chan (방찬)</h4>
+          <p>Nascimento: 03.10.1997</p>
+          <p>Nacionalidade: Australiano</p>
+        </div>
 
-      <div>
-        <h4>Bang Chan (방찬)</h4>
-        <p>Nascimento: 03.10.1997</p>
-        <p>Nacionalidade: Australiano</p>
-      </div>
+        <div class="right">
+          <h4>Lee Know (리노)</h4>
+          <p>Nascimento: 25.10.1998</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div>
 
-      <div>
-        <h4>Lee Know (리노)</h4>
-        <p>Nascimento: 25.10.1998</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
+        <div>
+          <h4>Changbin (창빈)</h4>
+          <p>Nascimento: 11.08.1999</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div>
 
-      <div>
-        <h4>Changbin (창빈)</h4>
-        <p>Nascimento: 11.08.1999</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
+        <div class="right">
+          <h4>Hyunjin (현진)</h4>
+          <p>Nascimento: 20.03.2000</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div>
 
-      <div>
-        <h4>Hyunjin (현진)</h4>
-        <p>Nascimento: 20.03.2000</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
+        <div>
+          <h4>Han (한)</h4>
+          <p>Nascimento: 14.09.2000</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div>
 
-      <div>
-        <h4>Han (한)</h4>
-        <p>Nascimento: 14.09.2000</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
+        <div class="right">
+          <h4>Felix (필릭스)</h4>
+          <p>Nascimento: 15.09.2000</p>
+          <p>Nacionalidade: Australiano</p>
+        </div>
 
-      <div>
-        <h4>Felix (필릭스)</h4>
-        <p>Nascimento: 15.09.2000</p>
-        <p>Nacionalidade: Australiano</p>
-      </div>
+        <div>
+          <h4>Seungmin (승민)</h4>
+          <p>Nascimento: 22.09.2000</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div>
 
-      <div>
-        <h4>Seungmin (승민)</h4>
-        <p>Nascimento: 22.09.2000</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
+        <div class="right">
+          <h4>I.N (아이엔)</h4>
+          <p>Nascimento: 08.02.2001</p>
+          <p>Nacionalidade: Sul-coreano</p>
+        </div></div>
+      </section>
 
-      <div>
-        <h4>I.N (아이엔)</h4>
-        <p>Nascimento: 08.02.2001</p>
-        <p>Nacionalidade: Sul-coreano</p>
-      </div>
-    </section>
+      <section class="sectionG dois">
+        <div class="titulospag"><h3>informação geral</h3><hr></div>
+          <div class="fundo">
+            <p>Debut: 25 de março de 2018</p>
+            <p>Fandom: STAY</p>
+            <p>Empresa: JYP Entertainment</p>
+            <p>Geração: 4ª Geração</p>
+            <p>País: Coreia do Sul</p></div>
+      </section>
 
-    <section>
-      <h3>páginas oficiais</h3>
-      <a href="https://www.instagram.com/realstraykids/" target="_blank">Instagram</a>
-      <a href="https://x.com/Stray_Kids" target="_blank">X(twitter)</a>
-      <a href="https://www.tiktok.com/@jypestraykids" target="_blank">TikTok</a>
-      <a href="https://www.youtube.com/@StrayKids" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/JYPEStrayKids/" target="_blank">Facebook</a>
-      <a href="https://www.weibo.com/straykids" target="_blank">Weibo</a>
-    </section>
+      <section class="sectionG tres">
+        <div class="titulospag"><h3>páginas oficiais</h3><hr></div>
+        <div class="fundo">
+          <a href="https://www.instagram.com/realstraykids/" target="_blank">
+            <img class="icon" src="icons/ins.png" alt="Instagram"></a>
+          <a href="https://x.com/Stray_Kids" target="_blank">
+            <img class="icon" src="icons/x.png" alt="X(Twitter)"></a>
+          <a href="https://www.tiktok.com/@jypestraykids" target="_blank">
+            <img class="icon" src="icons/tik.png" alt="TikTok"></a>
+          <a href="https://www.youtube.com/@StrayKids" target="_blank">
+            <img class="iconFive" src="icons/you.png" alt="YouTube"></a>
+          <a href="https://www.facebook.com/JYPEStrayKids/" target="_blank">
+            <img class="icon" src="icons/fac.png" alt="Facebook"></a>
+          <a href="https://www.weibo.com/straykids" target="_blank">
+            <img class="iconFive" src="icons/we.png" alt="Weibo"></a>
+          </div>
+      </section></div>
 
   </main>
-
+  <br><hr>
   <footer>
     <p>
       Desenvolvido por Enaira -  
