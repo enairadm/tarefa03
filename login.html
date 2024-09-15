@@ -4,47 +4,74 @@
 <head>
   <meta charset="UTF-8" />
   <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
+  <style>
+    .conteudo-login {
+      width: 40%;
+      margin: 0 auto;
+      padding: 5px;
+    }
+    
+    .buttonYESback {
+      width: 100%;
+      height: 30px;
+      font-size: medium;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    form p {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo do Site">
-    <h1>My K-List</h1>
+    <img  class="logo"src="img/logo.png" alt="Logo do Site">
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Página Inicial</a></li>
-      <li><a href="gruposdekpop.html">Grupos de K-Pop</a>
-        <ul><li><a href="straykids.html">Stray Kids</a></li></ul>     
-      </li>
-      <li><a href="autor.html">Autor</a></li>
-      <li><a href="login.html">Admin</a>
-        <ul>
-          <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
-          <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
-        </ul>
-      </li>
+  <nav class="row">
+    <ul class="navbar">
+      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
+      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
+        <ul class="sublinks">
+          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
+      <li class="#"><a href="autor.html">AUTOR</a></li>
+      <li class="#"><a href="login.html">ADMIN</a>
+        <ul class="sublinks">
+          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
+          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
     </ul>
   </nav>
+  <hr>
 
   <main>
-    <h2>Login</h2>
-    <form action="admin.html" method="post">
-      <div><label for="username">Usuário:</label><br>
-      <input type="text" id="username" name="username" minlength="6" maxlength="15" required></div><br>
+    <div class="titulospag"><h2>Login</h2><hr></div>
+    <div class="fundo login">
+      <div class="conteudo-login">
+      <form action="admin.html" method="post">
+        <div class="input-box">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" minlength="6" maxlength="15" required></div>
 
-      <div><label for="password">Senha:</label><br>
-      <input type="password" id="password" name="password" minlength="6" maxlength="15" required></div><br>
+        <div class="input-box">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="15" required></div>
 
-      <div><button type="submit">Entrar</button></div>
-      <p>
-        Não é um membro ainda?
-        <a href="cadastrousuarios.html">Cadastre-se agora!</a>
-      </p>
-  </form>
+        <button class="buttonYESback" type="submit">Entrar</button>
+        <p>
+          Não é um membro ainda?
+          <a href="cadastrousuarios.html">Cadastre-se agora!</a>
+        </p>
+      </form></div></div>
   </main>
-  <br>
+  <br><hr>
   <footer>
     <p>
       Desenvolvido por Enaira - 
