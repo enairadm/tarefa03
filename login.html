@@ -3,79 +3,81 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
-  <style>
-    .conteudo-login {
-      width: 40%;
-      margin: 0 auto;
-      padding: 5px;
-    }
-    
-    .buttonYESback {
-      width: 100%;
-      height: 30px;
-      font-size: medium;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    form p {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,900;1,900&family=Lato:wght@900&family=Montserrat:wght@900&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  
   <header>
-    <img  class="logo"src="img/logo.png" alt="Logo do Site">
+    <div class="header-left">
+      <a href="index.html"><img src="img/logo2.png" alt="Logo do Site" class="logo"></a>
+      <span class="title-website">My K-List</span>
+    </div>
+    
+    <input type="checkbox" id="check-nav">
+    <label for="check-nav" class="icons-nav">
+      <span class="open-menu"><i class="fas fa-bars"></i></span>
+      <span class="close-menu"><i class="fas fa-times"></i></span>
+    </label>
+
+    <nav class="sidebar">
+      <ul>
+        <li class="submenu">
+          <a class="linkPrin" href="index.html">Página Inicial</a>
+          <ul>
+            <li><a href="index2.html">Estilo 2</a></li>
+          </ul>
+        </li>
+
+        <li class="submenu">
+          <a class="linkPrin" href="gruposdekpop.html">Grupos de K-Pop</a>
+          <ul>
+            <li><a href="straykids.html">Stray Kids</a></li>
+          </ul>
+        </li>
+
+        <li><a class="linkPrin" href="autor.html">Sobre</a></li>
+
+        <li class="submenu">
+          <a class="linkPrin" href="login.html">Admin</a>
+          <ul>
+            <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
+            <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="row">
-    <ul class="navbar">
-      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
-      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
-        <ul class="sublinks">
-          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
-      <li class="#"><a href="autor.html">AUTOR</a></li>
-      <li class="#"><a href="login.html">ADMIN</a>
-        <ul class="sublinks">
-          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
-          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
-    </ul>
-  </nav>
-  <hr>
-
   <main>
-    <div class="titulospag"><h2>Login</h2><hr></div>
-    <div class="fundo login">
+    <div class="title">Login</div>
+    <div class="fundo">
       <div class="conteudo-login">
-      <form action="admin.html" method="post">
-        <div class="input-box">
-        <label for="username">Usuário</label>
-        <input type="text" id="username" name="username" minlength="6" maxlength="15" required></div>
+      <form action="admin.html" method="post" autocomplete="off">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" minlength="6" maxlength="15" required>
 
-        <div class="input-box">
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password" minlength="6" maxlength="15" required></div>
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" minlength="6" maxlength="15" required>
 
-        <button class="buttonYESback" type="submit">Entrar</button>
+        <button class="buttonBack" type="submit">Entrar</button>
         <p>
           Não é um membro ainda?
           <a href="cadastrousuarios.html">Cadastre-se agora!</a>
         </p>
       </form></div></div>
   </main>
-  <br><hr>
+
   <footer>
     <p>
       Desenvolvido por Enaira - 
-      <a href="autor.html">Autor</a>
+      <a href="autor.html">Sobre</a>
     </p>
   </footer>
 </body>
