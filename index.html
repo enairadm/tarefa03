@@ -3,148 +3,110 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,900;1,900&family=Source+Sans+3:wght@900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
-
-  <style>
-    .section {
-      margin: 10px 0;
-      padding: 20px;
-    }
-
-    .texto {
-      text-align: center;
-      padding: 80px;
-    }
-
-    h2 {
-      font-size: 64px;
-    }
-
-    .paragInicio {
-      font-size: 22px;
-    }
-
-    .galeria {
-      padding-bottom: 400px;
-    }
-
-    .galeria article {
-      float: left;
-      width: 33.33%;
-      padding: 30px;
-    }
-
-    .artigos article {
-      float: left;
-      width: 33.33%;
-      padding: 30px;
-    }
-
-    .section:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .imgInicio {
-      height: 272.67px;
-      width: 409px;
-      margin-top: 5px;
-    }
-
-    .artigos h3 {
-      padding: 10px;
-    }
-
-    .artigos img {
-      float: left;
-      margin-right: 10px;
-    }
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,900;1,900&family=Lato:wght@900&family=Montserrat:wght@900&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  
   <header>
-    <img class="logo" src="img/logo.png" alt="Logo do Site">
+    <div class="header-left">
+      <a href="index.html"><img src="img/logo2.png" alt="Logo do Site" class="logo"></a>
+      <span class="title-website">My K-List</span>
+    </div>
+    
+    <input type="checkbox" id="check-nav">
+    <label for="check-nav" class="icons-nav">
+      <span class="open-menu"><i class="fas fa-bars"></i></span>
+      <span class="close-menu"><i class="fas fa-times"></i></span>
+    </label>
+
+    <nav class="sidebar">
+      <ul>
+        <li class="submenu">
+          <a class="linkPrin" href="index.html">Página Inicial</a>
+          <ul>
+            <li><a href="index2.html">Estilo 2</a></li>
+          </ul>
+        </li>
+
+        <li class="submenu">
+          <a class="linkPrin" href="gruposdekpop.html">Grupos de K-Pop</a>
+          <ul>
+            <li><a href="straykids.html">Stray Kids</a></li>
+          </ul>
+        </li>
+
+        <li><a class="linkPrin" href="autor.html">Sobre</a></li>
+
+        <li class="submenu">
+          <a class="linkPrin" href="login.html">Admin</a>
+          <ul>
+            <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
+            <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="row">
-    <ul class="navbar">
-      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
-      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
-        <ul class="sublinks">
-          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
-      <li class="#"><a href="autor.html">AUTOR</a></li>
-      <li class="#"><a href="login.html">ADMIN</a>
-        <ul class="sublinks">
-          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
-          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
-    </ul>
-  </nav>
-  <hr>
-
   <main>
-    <div class="section">
-      <div class="texto"><h2>Descubra o universo do k-pop!</h2>
-      <p class="paragInicio">Explore uma coleção de grupos de kpop e mergulhe na onda da música pop coreana.</p></div>
+    <div class="text-main">
+      <div class="title2">Descubra o universo do k-Pop!</div>
+      <p>Explore uma coleção de grupos de kpop e mergulhe na onda da música pop coreana.</p>
     </div>
 
-    <div>
-      <section class="galeria">
-        <article>
-          <h3>Stray Kids</h3>
-          <img src="img/GRAJcOebAAAuxxD.jpg" alt="Imagem Stray Kids"
-          class="imgInicio">
-        </article>
-        <article>
-          <h3>aespa</h3>
-          <img src="img/GRxrfH6acAE-i3Q.jpg" alt="Imagem aespa"
-          class="imgInicio">
-        </article>
-        <article>
-          <h3>RIIZE</h3>
-          <img src="img/F4tQI7wa4AEvJLW.jpg" alt="Imagem RIIZE"
-          class="imgInicio">
-        </article>
-      </section>
+    <section class="galeria">
+      <div class="objetotema um">
+        <img src="img/GRAJcOebAAAuxxD.jpg" alt="Imagem Stray Kids">
+        <span class="title-img">Stray Kids</span>
+      </div>
+      <div class="objetotema dois">
+        <img src="img/GRxrfH6acAE-i3Q.jpg" alt="Imagem aespa">
+        <span class="title-img">aespa</span>
+      </div>
+      <div class="objetotema tres">
+        <img src="img/F4tQI7wa4AEvJLW.jpg" alt="Imagem RIIZE">
+        <span class="title-img">RIIZE</span>
+      </div>
+    </section>
 
-    <div class="section">
-      <section class="artigos">
-        <article>
-          <img src="icons/desatque.png" alt="icon destaque">
-          <h3>Grupos Populares</h3>
-          <hr>
-          <p class="fundo">Os grupos de k-pop mais populares e talentosos do momento.</p>
-        </article>
-      
-        <article>
-          <img src="icons/popular.png" alt="icon popular">
-          <h3>Grupos em Destaque</h3>
-          <hr>
-          <p class="fundo">Pesquise e encontre o grupo de k-pop que mais combina com você.</p>
-        </article>
-      
-        <article>
-          <img src="icons/new.png" alt="icon news">
-          <h3>Grupos <i>Rookies</i></h3>
-          <hr>
-          <p class="fundo">Conheça os mais novos grupos de k-pop e explore os dados mais relevantes sobre eles.</p>
-        </article>
-      </section></div>
+    <section class="artigos">
+      <article class="artigo um">
+        <div class="links">
+          <span><i class="fa-solid fa-fire"></i></span>
+          <div class="title2">Grupos Populares</div>
+        </div>
+          <p>Os grupos de k-pop mais populares e talentosos do momento.</p>
+      </article>
+
+      <article class="artigo dois">
+        <div class="links">
+          <span><i class="fa-solid fa-award"></i></span>
+          <div class="title2">Grupos em Destaque</div>
+        </div>
+          <p>Pesquise e encontre o grupo de k-pop que mais combina com você.</p>
+      </article>
+
+      <article class="artigo tres">
+        <div class="links">
+          <span><i class="fa-solid fa-face-grin-stars"></i></span>        
+          <div class="title2">Grupos <span>Rookies</span></div>
+        </div>
+          <p>Conheça os mais novos grupos de k-pop e explore os dados mais relevantes sobre eles.</p>
+      </article>
+    </section>
   </main>
-  <br>
-  <hr>
+
   <footer>
     <p>
       Desenvolvido por Enaira - 
-      <a href="autor.html">Autor</a>
+      <a href="autor.html">Sobre</a>
     </p>
   </footer>
 </body>
