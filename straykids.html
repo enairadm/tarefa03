@@ -2,105 +2,76 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Stray Kids</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap" rel="stylesheet">
-  <style>
-    .sectionIN, .sectionG.dois {
-      padding-bottom: 30px;
-    }
-
-    .sectionG {
-      float: left;
-    }
-
-    row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .sectionG.um {
-      width: 62%;
-    }
-
-    .sectionG.dois {
-      width: 38%;
-    }
-
-    .sectionG.tres {
-      width: 38%;
-    }
-
-    .sectionG.dois, .sectionG.tres {
-      padding-left: 45px;
-    }
-
-    .sectionG.tres .fundo {
-      text-align: center;
-    }
-
-    .sectionG.tres.icon {
-      width: 34px;
-      height: 34px;
-    }
-
-    .sectionG.tres img {
-      margin: 10px;
-    }
-
-    .sectionG.um h4 {
-      font-family: "Fira Sans", sans-serif;
-      font-weight: 900;
-      font-style: normal;
-      padding-bottom: 8px;
-    }
-
-    .fundo .right {
-      text-align: right;
-    }
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,900;1,900&family=Lato:wght@900&family=Montserrat:wght@900&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  
   <header>
-    <img class="logo" src="img/logo.png" alt="Logo do site">
+    <div class="header-left">
+      <a href="index.html"><img src="img/logo2.png" alt="Logo do Site" class="logo"></a>
+      <span class="title-website">My K-List</span>
+    </div>
+    
+    <input type="checkbox" id="check-nav">
+    <label for="check-nav" class="icons-nav">
+      <span class="open-menu"><i class="fas fa-bars"></i></span>
+      <span class="close-menu"><i class="fas fa-times"></i></span>
+    </label>
+
+    <nav class="sidebar">
+      <ul>
+        <li class="submenu">
+          <a class="linkPrin" href="index.html">Página Inicial</a>
+          <ul>
+            <li><a href="index2.html">Estilo 2</a></li>
+          </ul>
+        </li>
+
+        <li class="submenu">
+          <a class="linkPrin" href="gruposdekpop.html">Grupos de K-Pop</a>
+          <ul>
+            <li><a href="straykids.html">Stray Kids</a></li>
+          </ul>
+        </li>
+
+        <li><a class="linkPrin" href="autor.html">Sobre</a></li>
+
+        <li class="submenu tres">
+          <a class="linkPrin" href="login.html">Admin</a>
+          <ul>
+            <li><a href="cadastrogrupos.html">Cadastro de Grupos</a></li>
+            <li><a href="cadastrousuarios.html">Cadastro de Usuários</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="row">
-    <ul class="navbar">
-      <li class="#"><a href="index.html">PÁGINA INICIAL</a></li>
-      <li class="#"><a href="gruposdekpop.html">GRUPOS DE K-POP</a>
-        <ul class="sublinks">
-          <li class="#"><a href="straykids.html">STRAY KIDS</a></li></ul></li>
-      <li class="#"><a href="autor.html">AUTOR</a></li>
-      <li class="#"><a href="login.html">ADMIN</a>
-        <ul class="sublinks">
-          <li class="#"><a href="cadastrogrupos.html">CADASTRO DE GRUPOS</a></li>
-          <li class="#"><a href="cadastrousuarios.html">CADASTRO DE USUÁRIOS</a></li></ul></li>
-    </ul>
-  </nav>
-  <hr>
-  
   <main>
-    <div class="sectionIN">
-      <img src="img/ImagemPrincipal.png" alt="Imagem Stray Kids">
-      <h2>Stray Kids</h2></div>
+    
+    <div class="imgprincipal">
+        <img src="img/GRAJcOebAAAuxxD.jpg" alt="Imagem Stray Kids">
+    </div>
+    <div><span class="title main">Stray Kids</span></div>
 
-    <section class="sectionIN">
-      <div class="titulospag"><h3>introdução</h3><hr></div>
+    <section class="section um">
+      <div class="title">introdução</div>
         <p class="fundo">Stray Kids (스트레이 키즈), também conhecido como SKZ, 
         é um grupo masculino sul-coreano de oito membros da JYP Entertainment. 
         O grupo foi formado por meio do reality show de competição de mesmo nome, Stray Kids.</p>
     </section>
 
-    <div class="row">
-      <section class="sectionG um">
-        <div class="titulospag"><h3>membros</h3><hr></div>
+    <div>
+      <section class="section dois">
+        <div class="title">membros</div>
 
         <div class="fundo"><div>
           <h4>Bang Chan (방찬)</h4>
@@ -151,8 +122,8 @@
         </div></div>
       </section>
 
-      <section class="sectionG dois">
-        <div class="titulospag"><h3>informação geral</h3><hr></div>
+      <section class="section tres">
+        <div class="title">informação geral</div>
           <div class="fundo">
             <p>Debut: 25 de março de 2018</p>
             <p>Fandom: STAY</p>
@@ -161,30 +132,35 @@
             <p>País: Coreia do Sul</p></div>
       </section>
 
-      <section class="sectionG tres">
-        <div class="titulospag"><h3>páginas oficiais</h3><hr></div>
+      <section class="section quatro">
+        <div class="title">páginas oficiais</div>
         <div class="fundo">
           <a href="https://www.instagram.com/realstraykids/" target="_blank">
             <img class="icon" src="icons/ins.png" alt="Instagram"></a>
+
           <a href="https://x.com/Stray_Kids" target="_blank">
             <img class="icon" src="icons/x.png" alt="X(Twitter)"></a>
+
           <a href="https://www.tiktok.com/@jypestraykids" target="_blank">
             <img class="icon" src="icons/tik.png" alt="TikTok"></a>
+
           <a href="https://www.youtube.com/@StrayKids" target="_blank">
-            <img class="iconFive" src="icons/you.png" alt="YouTube"></a>
+            <img class="icon w" src="icons/you.png" alt="YouTube"></a>
+
           <a href="https://www.facebook.com/JYPEStrayKids/" target="_blank">
             <img class="icon" src="icons/fac.png" alt="Facebook"></a>
+
           <a href="https://www.weibo.com/straykids" target="_blank">
-            <img class="iconFive" src="icons/we.png" alt="Weibo"></a>
+            <img class="icon w" src="icons/we.png" alt="Weibo"></a>
           </div>
       </section></div>
 
   </main>
-  <br><hr>
+
   <footer>
     <p>
-      Desenvolvido por Enaira -  
-      <a href="autor.html">Autor</a>
+      Desenvolvido por Enaira - 
+      <a href="autor.html">Sobre</a>
     </p>
   </footer>
 </body>
